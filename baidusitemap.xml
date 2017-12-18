@@ -4,6 +4,160 @@
 
     
   <url>
+    <loc>https://liuchi.coding.me/2017/08/17/Python%E7%88%AC%E8%99%AB%E4%B9%8B%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2017-12-18T10:51:14.931Z</lastmod>
+    <data>
+        <display>
+        <title>Python爬虫之正则表达式入门</title>
+        <pubTime>2017-08-17T10:50:08.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>爬虫</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web Crawler" url="https://liuchi.coding.me/categories/Web-Crawler/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2017/08/17/Python%E7%88%AC%E8%99%AB%E4%B9%8B%E7%88%AC%E5%8F%96%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%EF%BC%88BeautifulSoup%E5%BA%93%EF%BC%89/</loc>
+    <lastmod>2017-12-18T10:49:28.672Z</lastmod>
+    <data>
+        <display>
+        <title>Python爬虫之爬取中国大学排名（BeautifulSoup库）</title>
+        <pubTime>2017-08-17T10:47:35.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>爬虫</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web Crawler" url="https://liuchi.coding.me/categories/Web-Crawler/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2017/08/16/Python%E7%88%AC%E8%99%AB%E4%B9%8B%E4%BF%A1%E6%81%AF%E6%A0%87%E8%AE%B0%E4%B8%8E%E6%8F%90%E5%8F%96/</loc>
+    <lastmod>2017-12-18T10:49:05.253Z</lastmod>
+    <data>
+        <display>
+        <title>Python爬虫之信息标记与提取</title>
+        <pubTime>2017-08-16T10:45:28.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>爬虫</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web Crawler" url="https://liuchi.coding.me/categories/Web-Crawler/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2017/08/16/Python%E7%88%AC%E8%99%AB%E4%B9%8BBeautifulSoup%E5%BA%93%E7%9A%84%E5%85%A5%E9%97%A8%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2017-12-18T10:46:55.634Z</lastmod>
+    <data>
+        <display>
+        <title>Python爬虫之BeautifulSoup库的入门与使用</title>
+        <pubTime>2017-08-16T10:43:06.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>爬虫</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web Crawler" url="https://liuchi.coding.me/categories/Web-Crawler/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2017/05/17/Python%E7%88%AC%E8%99%AB%E4%B9%8Brobots%E5%8D%8F%E8%AE%AE/</loc>
+    <lastmod>2017-12-18T10:42:41.629Z</lastmod>
+    <data>
+        <display>
+        <title>Python爬虫之robots协议</title>
+        <pubTime>2017-05-17T10:41:48.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>爬虫</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web Crawler" url="https://liuchi.coding.me/categories/Web-Crawler/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2017/04/15/Python%E7%88%AC%E8%99%AB%E4%B9%8Brequests%E5%BA%93%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2017-12-18T10:41:16.753Z</lastmod>
+    <data>
+        <display>
+        <title>Python爬虫之requests库入门</title>
+        <pubTime>2017-04-15T10:38:10.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>爬虫</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web Crawler" url="https://liuchi.coding.me/categories/Web-Crawler/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2017/08/16/Python%E7%88%AC%E8%99%AB%E4%B9%8Brequests%E5%BA%93%E7%BD%91%E7%BB%9C%E7%88%AC%E5%8F%96%E7%AE%80%E5%8D%95%E5%AE%9E%E6%88%98/</loc>
+    <lastmod>2017-12-18T10:40:23.096Z</lastmod>
+    <data>
+        <display>
+        <title>Python爬虫之requests库网络爬取简单实战</title>
+        <pubTime>2017-08-16T12:12:16.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>爬虫</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web Crawler" url="https://liuchi.coding.me/categories/Web-Crawler/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://liuchi.coding.me/2017/08/01/JavaNIO%E4%B9%8BChannel%E5%92%8CBuffer/</loc>
     <lastmod>2017-12-18T10:25:48.609Z</lastmod>
     <data>
@@ -766,30 +920,6 @@
            
              
               <breadCrumb title="网络" url="https://liuchi.coding.me/categories/%E7%BD%91%E7%BB%9C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://liuchi.coding.me/2017/08/16/Python%E7%88%AC%E8%99%AB%E4%B9%8Brequests%E5%BA%93%E7%BD%91%E7%BB%9C%E7%88%AC%E5%8F%96%E7%AE%80%E5%8D%95%E5%AE%9E%E6%88%98/</loc>
-    <lastmod>2017-12-15T12:14:54.394Z</lastmod>
-    <data>
-        <display>
-        <title>Python爬虫之requests库网络爬取简单实战</title>
-        <pubTime>2017-08-16T12:12:16.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>爬虫</tag>
-         
-        <tag>requests库</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web Crawler" url="https://liuchi.coding.me/categories/Web-Crawler/"/>
           
         </display>
     </data>
