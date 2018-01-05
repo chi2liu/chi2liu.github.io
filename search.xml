@@ -136,8 +136,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>源码</tag>
-        <tag>LinkedList</tag>
       </tags>
   </entry>
   <entry>
@@ -161,8 +159,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>源码</tag>
-        <tag>ArrayList</tag>
       </tags>
   </entry>
   <entry>
@@ -175,7 +171,6 @@
       <tags>
         <tag>Java</tag>
         <tag>JVM</tag>
-        <tag>GC</tag>
       </tags>
   </entry>
   <entry>
@@ -209,11 +204,6 @@
       <categories>
         <category>操作系统</category>
       </categories>
-      <tags>
-        <tag>Select</tag>
-        <tag>Poll</tag>
-        <tag>Epoll</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[深入理解--异步和非阻塞]]></title>
@@ -222,10 +212,6 @@
       <categories>
         <category>操作系统</category>
       </categories>
-      <tags>
-        <tag>异步</tag>
-        <tag>非阻塞</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[设计模式之代理模式（Proxy模式）]]></title>
@@ -279,9 +265,7 @@
         <category>网络</category>
       </categories>
       <tags>
-        <tag>TCP</tag>
-        <tag>路由</tag>
-        <tag>算法.IP</tag>
+        <tag>TCP/IP</tag>
       </tags>
   </entry>
   <entry>
@@ -292,9 +276,7 @@
         <category>网络</category>
       </categories>
       <tags>
-        <tag>TCP</tag>
-        <tag>IP</tag>
-        <tag>拥塞控制</tag>
+        <tag>TCP/IP</tag>
       </tags>
   </entry>
   <entry>
@@ -305,8 +287,7 @@
         <category>网络</category>
       </categories>
       <tags>
-        <tag>TCP</tag>
-        <tag>IP</tag>
+        <tag>TCP/IP</tag>
       </tags>
   </entry>
   <entry>
@@ -365,7 +346,6 @@
       <tags>
         <tag>Java</tag>
         <tag>多线程</tag>
-        <tag>内存模型</tag>
       </tags>
   </entry>
   <entry>
@@ -464,8 +444,7 @@
         <category>Web</category>
       </categories>
       <tags>
-        <tag>session</tag>
-        <tag>cookies</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -477,7 +456,6 @@
       </categories>
       <tags>
         <tag>Web</tag>
-        <tag>servlet</tag>
       </tags>
   </entry>
   <entry>
@@ -489,7 +467,6 @@
       </categories>
       <tags>
         <tag>Web</tag>
-        <tag>MVC</tag>
       </tags>
   </entry>
   <entry>
@@ -501,7 +478,6 @@
       </categories>
       <tags>
         <tag>Web</tag>
-        <tag>容器</tag>
       </tags>
   </entry>
 </search>
