@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="机器学习," />
 
 
 
@@ -88,17 +88,27 @@
 
 
 
-<meta name="description" content="如果记忆是一个罐头，我希望它永远不会过期">
+<meta name="description" content="本文相关代码可以从Backpropagation下载  在上一篇文章Into-Backpropagation，我们研究了一个嵌套神经元的反向传播的计算，了解到反向传播本质就是利用链式法则，求取所需要更新的变量的偏导数！但我们前文所研究的神经元是比较简单的，没有复杂的函数，也没有复杂的结构，而真实的神经网络中，往往神经元的函数和结构都比较复杂！ 为了更好的过渡到复杂的神经网络中的反向传播，本文先引">
+<meta name="keywords" content="机器学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Practice-Backpropagation">
 <meta property="og:url" content="https://liuchi.coding.me/2018/01/26/Practice-Backpropagation/index.html">
 <meta property="og:site_name" content="Liu Chi&#39;s Personal Website">
-<meta property="og:description" content="如果记忆是一个罐头，我希望它永远不会过期">
+<meta property="og:description" content="本文相关代码可以从Backpropagation下载  在上一篇文章Into-Backpropagation，我们研究了一个嵌套神经元的反向传播的计算，了解到反向传播本质就是利用链式法则，求取所需要更新的变量的偏导数！但我们前文所研究的神经元是比较简单的，没有复杂的函数，也没有复杂的结构，而真实的神经网络中，往往神经元的函数和结构都比较复杂！ 为了更好的过渡到复杂的神经网络中的反向传播，本文先引">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-26T06:43:37.678Z">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-f58b122fadbd679f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-ae375582d596d1af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-841bbbdebf77b559.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-8918ed133a024b0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-85b05d75d2be4d79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-a1fcd76aadde8b3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-a74cc27ab57cb19d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-8a74c0010e4a6b1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-01-26T06:59:58.520Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Practice-Backpropagation">
-<meta name="twitter:description" content="如果记忆是一个罐头，我希望它永远不会过期">
+<meta name="twitter:description" content="本文相关代码可以从Backpropagation下载  在上一篇文章Into-Backpropagation，我们研究了一个嵌套神经元的反向传播的计算，了解到反向传播本质就是利用链式法则，求取所需要更新的变量的偏导数！但我们前文所研究的神经元是比较简单的，没有复杂的函数，也没有复杂的结构，而真实的神经网络中，往往神经元的函数和结构都比较复杂！ 为了更好的过渡到复杂的神经网络中的反向传播，本文先引">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1234352-f58b122fadbd679f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -363,12 +373,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-26T14:43:37+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-01-26T14:59:58+08:00">
                 2018-01-26
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -396,7 +428,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  1,145
                 </span>
               
 
@@ -412,7 +444,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -433,7 +465,34 @@
       
 
       
-        
+        <blockquote>
+<p>本文相关代码可以从<a href="https://github.com/chi2liu/Backpropagation" target="_blank" rel="noopener">Backpropagation</a>下载</p>
+</blockquote>
+<p>在上一篇文章<a href="https://liuchi.coding.me/2018/01/26/Into-Backpropagation/">Into-Backpropagation</a><br>，我们研究了一个嵌套神经元的反向传播的计算，了解到反向传播本质就是利用链式法则，求取所需要更新的变量的偏导数！但我们前文所研究的神经元是比较简单的，没有复杂的函数，也没有复杂的结构，而真实的神经网络中，往往神经元的函数和结构都比较复杂！</p>
+<p>为了更好的过渡到复杂的神经网络中的反向传播，本文先引入复杂函数，也就是神经网络中最基本的激活函数，并联系如何计算反向传播，为后续进入神经网络的反向传播计算打下坚实的基础！<br><a id="more"></a></p>
+<h1 id="Lets-get-started"><a href="#Lets-get-started" class="headerlink" title="Lets get started!!!"></a>Lets get started!!!</h1><p>我们将引入神经网络最常见的激活函数sigmoid函数！<br><img src="http://upload-images.jianshu.io/upload_images/1234352-f58b122fadbd679f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-ae375582d596d1af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>实现这个单一神经元很简单<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(x)</span>:</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>/(<span class="number">1</span>+np.exp(-x))</span><br><span class="line">a=<span class="number">-2</span></span><br><span class="line">f=sigmoid(a)</span><br><span class="line">print(f) <span class="comment">#outputs 0.1192</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="Aim"><a href="#Aim" class="headerlink" title="Aim"></a>Aim</h1><p>接下来依旧是老套路，我们是=试着使输出值增加。首先我们 就要计算Sigmoid的函数的导数，根据微分的法则，我们可以求出<br><img src="http://upload-images.jianshu.io/upload_images/1234352-841bbbdebf77b559.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>然后，就可以得到更新变量的方程：<br><img src="http://upload-images.jianshu.io/upload_images/1234352-8918ed133a024b0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>我们用python实现：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1.</span>/(<span class="number">1</span>+np.exp(-x))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">derivative_sigmoid</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sigmoid(x) * (<span class="number">1</span> - sigmoid(x))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">a = <span class="number">-2</span></span><br><span class="line">h = <span class="number">0.1</span></span><br><span class="line">a = a + h * derivative_sigmoid(a)</span><br><span class="line">f = sigmoid(a)</span><br><span class="line">print(f)  <span class="comment">#outputs 0.1203</span></span><br></pre></td></tr></table></figure></p>
+<p>观察输出结果，0.1203比0.1192大.所以我们的算法成功将输出值增加！</p>
+<p>现在我们已经知道如何对一个复杂的函数的神经元进行反向传播，从而改变输出值！那么，接下来我们就将复杂函数放到一个嵌套的神经网络结构中，看看如何进行反向传播的计算：<br><img src="http://upload-images.jianshu.io/upload_images/1234352-85b05d75d2be4d79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>这个神经网络的结构就是在前文的基础上增加了一个sigmoid函数！我们先用python实现它的正向传播<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">addition</span><span class="params">(x,y)</span>:</span></span><br><span class="line">	<span class="keyword">return</span> x+y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">product</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x * y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span> / (<span class="number">1</span> + np.exp( -x ))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">a=<span class="number">1</span></span><br><span class="line">b=<span class="number">-2</span></span><br><span class="line">c=<span class="number">-3</span></span><br><span class="line">d=addition(a,b)</span><br><span class="line">e=product(c,d)</span><br><span class="line">f=sigmoid(e)</span><br><span class="line">print(f)  <span class="comment">#outputs 0.952574</span></span><br></pre></td></tr></table></figure></p>
+<p>现在我们开始计算反向传播，首先很明确的是，要进行反向传播，就得求得所要更新变量的微分：<br><img src="http://upload-images.jianshu.io/upload_images/1234352-a1fcd76aadde8b3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>所以我们需要的计算就是a，b，c三个变量的偏导数！具体的求解规则和前文一样就是倒着从输出往回推，看看经过了哪些神经元的计算，然后利用链式法则：<br><img src="http://upload-images.jianshu.io/upload_images/1234352-a74cc27ab57cb19d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>希望读者能独立推导出上述的公式！</p>
+<p>得到上述微分的计算公式，我们就要开始实际计算这些微分值，不难求出<br><img src="http://upload-images.jianshu.io/upload_images/1234352-8a74c0010e4a6b1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>如果读者对此推导过程依旧有疑问，请重新阅读前两篇文章即能理解！</p>
+<p>最后，就是编写程序来实现反向传播了！</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">addition</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x + y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">product</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x * y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span> / (<span class="number">1</span> + np.exp(-x))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">derivative_sigmoid</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sigmoid(x) * (<span class="number">1</span> - sigmoid(x))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># initialization</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">-2</span></span><br><span class="line">c = <span class="number">-3</span></span><br><span class="line"><span class="comment"># forward-propogation</span></span><br><span class="line">d = addition(a, b)</span><br><span class="line">e = product(c, d)</span><br><span class="line"><span class="comment"># step size</span></span><br><span class="line">h = <span class="number">0.1</span></span><br><span class="line"><span class="comment"># derivatives</span></span><br><span class="line">derivative_f_e = derivative_sigmoid(e)</span><br><span class="line">derivative_e_d = c</span><br><span class="line">derivative_e_c = d</span><br><span class="line">derivative_d_a = <span class="number">1</span></span><br><span class="line">derivative_d_b = <span class="number">1</span></span><br><span class="line"><span class="comment"># backward-propogation (Chain rule)</span></span><br><span class="line">derivative_f_a = derivative_f_e * derivative_e_d * derivative_d_a</span><br><span class="line">derivative_f_b = derivative_f_e * derivative_e_d * derivative_d_b</span><br><span class="line">derivative_f_c = derivative_f_e * derivative_e_c</span><br><span class="line"><span class="comment"># update-parameters</span></span><br><span class="line">a = a + h * derivative_f_a</span><br><span class="line">b = b + h * derivative_f_b</span><br><span class="line">c = c + h * derivative_f_c</span><br><span class="line">d = addition(a, b)</span><br><span class="line">e = product(c, d)</span><br><span class="line">f = sigmoid(e)</span><br><span class="line">print(f)  <span class="comment"># prints 0.9563</span></span><br></pre></td></tr></table></figure>
+<p>输出结果是0.9563比0.9525大，可以看到，经过一次反向传播，我们的输出值成功增加！</p>
+<p>经过练习，我们可以发现，不管网络多复杂，无非是链式法则求导是复杂一些，只要我们能求出微分，就能进行反向传播！</p>
+<h1 id="待续"><a href="#待续" class="headerlink" title="待续"></a>待续</h1><p>我们目前练习的都还是比较简单的网络，但恭喜你已经了解到反向传播的最核心的思想！下一篇文章<a href="https://liuchi.coding.me/2018/01/26/Further-into-Backpropagation/">Further into Backpropagation</a>，我们会正式引入一个真实的神经网络结构，然后进行反向传播的计算！并且利用矩阵来简化计算过程！</p>
+<blockquote>
+<p>本文相关代码可以从<a href="https://github.com/chi2liu/Backpropagation" target="_blank" rel="noopener">Backpropagation</a>下载</p>
+</blockquote>
+
       
 	  
 	  
@@ -460,6 +519,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/机器学习/" rel="tag"><i class="fa fa-tag"></i> 机器学习</a>
+          
+        </div>
       
 
       
@@ -555,8 +620,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -575,7 +649,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">50</span>
+                  <span class="site-state-item-count">51</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -673,6 +747,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lets-get-started"><span class="nav-number">1.</span> <span class="nav-text"><a href="#Lets-get-started" class="headerlink" title="Lets get started!!!"></a>Lets get started!!!</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Aim"><span class="nav-number">2.</span> <span class="nav-text"><a href="#Aim" class="headerlink" title="Aim"></a>Aim</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#待续"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x5F85;&#x7EED;" class="headerlink" title="&#x5F85;&#x7EED;"></a>&#x5F85;&#x7EED;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -700,7 +790,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">91.5k</span>
+    <span title="Site words total count">102.6k</span>
   
 </div>
 

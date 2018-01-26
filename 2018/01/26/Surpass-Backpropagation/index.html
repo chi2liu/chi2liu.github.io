@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="机器学习," />
 
 
 
@@ -88,17 +88,56 @@
 
 
 
-<meta name="description" content="如果记忆是一个罐头，我希望它永远不会过期">
+<meta name="description" content="本文相关代码可以从Backpropagation下载  上篇文章Further into Backpropagation中，我们小试牛刀，将反向传播算法运用到了一个两层的神经网络结构中！然后往往实际中的神经网络拥有3层甚至更多层的结构，我们接下来就已一个三层的神经网络结构为例，分析如何运用动态规划来优化反向传播时微分的计算！">
+<meta name="keywords" content="机器学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Surpass-Backpropagation">
 <meta property="og:url" content="https://liuchi.coding.me/2018/01/26/Surpass-Backpropagation/index.html">
 <meta property="og:site_name" content="Liu Chi&#39;s Personal Website">
-<meta property="og:description" content="如果记忆是一个罐头，我希望它永远不会过期">
+<meta property="og:description" content="本文相关代码可以从Backpropagation下载  上篇文章Further into Backpropagation中，我们小试牛刀，将反向传播算法运用到了一个两层的神经网络结构中！然后往往实际中的神经网络拥有3层甚至更多层的结构，我们接下来就已一个三层的神经网络结构为例，分析如何运用动态规划来优化反向传播时微分的计算！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-26T06:44:19.455Z">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-6ecc46969fc8492e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-4a7666f84e7dd2cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-b003e3eff33154aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-15ce5d78c3a10c57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-fb5beff863cf469a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-7b8d803c1321a22d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-23188247cc6c2d2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-4c32d4ba9efdfc85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-eb16ebf1d52d63cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-8f1c85d6dbaf92e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-6b1ccd4fdd963ec2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-5502f1b8aa0821ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-8f1c85d6dbaf92e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-95b0c09ab053268f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-9ac9202e2ff208e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-1a7d70f5f4b54d93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-5355dd0512d09ead.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-195c12e3fef1751f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-95b0c09ab053268f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-3073f820640e0119.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-84fe66b46d4eabd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-f911a1e197e0ad6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-27e8db018a1fc097.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-3c92ca036b968c7c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-04c6708680eb4e3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-38376267d402a404.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-701a80bc8946903c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-9055b70868884bf6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-005fa777f95d1de4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-ed1890dd11590e94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-0613836247b0cd52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-701a80bc8946903c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-9055b70868884bf6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-005fa777f95d1de4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-ed1890dd11590e94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-c45cb9dcc778a5a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1234352-212d2d6887208b92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-01-26T07:04:25.836Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Surpass-Backpropagation">
-<meta name="twitter:description" content="如果记忆是一个罐头，我希望它永远不会过期">
+<meta name="twitter:description" content="本文相关代码可以从Backpropagation下载  上篇文章Further into Backpropagation中，我们小试牛刀，将反向传播算法运用到了一个两层的神经网络结构中！然后往往实际中的神经网络拥有3层甚至更多层的结构，我们接下来就已一个三层的神经网络结构为例，分析如何运用动态规划来优化反向传播时微分的计算！">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1234352-6ecc46969fc8492e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -363,12 +402,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-26T14:44:19+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-01-26T15:04:25+08:00">
                 2018-01-26
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -396,7 +457,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  3,557
                 </span>
               
 
@@ -412,7 +473,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  15
                 </span>
               
             </div>
@@ -433,7 +494,81 @@
       
 
       
-        
+        <blockquote>
+<p>本文相关代码可以从<a href="https://github.com/chi2liu/Backpropagation" target="_blank" rel="noopener">Backpropagation</a>下载</p>
+</blockquote>
+<p>上篇文章<a href="https://liuchi.coding.me/2018/01/26/Further-into-Backpropagation/">Further into Backpropagation</a>中，我们小试牛刀，将反向传播算法运用到了一个两层的神经网络结构中！然后往往实际中的神经网络拥有3层甚至更多层的结构，我们接下来就已一个三层的神经网络结构为例，分析如何运用<strong>动态规划</strong>来优化反向传播时微分的计算！<br><a id="more"></a></p>
+<h1 id="Lets-get-started"><a href="#Lets-get-started" class="headerlink" title="Lets get started!!!"></a>Lets get started!!!</h1><p>如下的网络结构：<br><img src="http://upload-images.jianshu.io/upload_images/1234352-6ecc46969fc8492e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>在正式分析神经网络之前，我们先修改一下权重矩阵的表示形式！</p>
+<p>让我们以一个符号开始，它代表网络中任意方式的权重信息。我们将使用<br><img src="http://upload-images.jianshu.io/upload_images/1234352-4a7666f84e7dd2cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>来表示从网络第(l−1)层中第k个神经元指向l层中第j个神经元的连接权重。因此举个例子，下图中的权重就表示从第二层中第四个神经元指向第三层中第二个神经元的权重：<br><img src="http://upload-images.jianshu.io/upload_images/1234352-b003e3eff33154aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>这个符号起始比较麻烦，的确需要一些努力才能掌握。但是通过努力你会发现它将变得简单和自然。符号中的一个不容易接受的地方就是j和k的位置关系。你可能认为用j来表示输入神经元，k表示输出神经元，而不是实际定义中反过来的方式。我将在下面解释这样做法的原因。</p>
+<p>我将使用相似的符号来表示网络中的偏差和激活。明确地，我们使用blj来表示第l层中第j神经元的偏差，用alj来表示第l层中第j神经元的激活。下面的图将展示这些符号：<br><img src="http://upload-images.jianshu.io/upload_images/1234352-15ce5d78c3a10c57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>有了这些符号，第l层中第j神经元的激活alj就与第(l−1)层中所有激活相关。<br><img src="http://upload-images.jianshu.io/upload_images/1234352-fb5beff863cf469a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>能够用漂亮而简洁的向量格式进行重写<br><img src="http://upload-images.jianshu.io/upload_images/1234352-7b8d803c1321a22d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>这个表达式能给我们更多的启发，某一层的激活与上一层的激活是有什么关系：我们只是将权重矩阵应用到激活上，然后再加上一个偏差向量，最后应用σ函数!<strong>顺便说一下，这个表达式诱发了前面提到的wljk符号。如果我们使用j来指示输入神经元，k来指示输出神经元，那么我们就需要替换表达式中的权重矩阵 用权重矩阵的转置。虽然这是一个很小的变化，但是烦人的是，我们将失去解释和思考的简单性“应用权重矩阵到激活上。</strong>这个全局视图非常简单和简洁（使用了很少的下标），相对于一个神经元到一个神经元的方式。也可以将其想象成一种避免下标混乱，而且还能保持精确的方法。这个表达式在实际中非常有用，因为许多矩阵库都能提供快速的矩阵乘法，向量加法和向量化。</p>
+<p>我们间接的计算<br><img src="http://upload-images.jianshu.io/upload_images/1234352-23188247cc6c2d2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>这个值非常有用，我们将zl命名为：网络l层的加权输入。我们将在本章大量的使用加权输入zl。</p>
+<h1 id="Hadamard乘积s⊙t"><a href="#Hadamard乘积s⊙t" class="headerlink" title="Hadamard乘积s⊙t"></a>Hadamard乘积s⊙t</h1><p>后向传播算法是基于通用的线性代数运算——就像向量加法，矩阵乘向量等等。但是有一个操作平常很少用到。特别的，假设s和t是相同维数的两个向量，那么我们使用s⊙t来表示两个向量元素级的乘法。<br><img src="http://upload-images.jianshu.io/upload_images/1234352-4c32d4ba9efdfc85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>这种元素级的乘法有时叫做 Hadamard乘积或者Schur乘积。我们将把它叫做Hadamard乘积。好的矩阵库一般都能提供Hadamard乘积的快速实施，因此在实施后向传播时候就非常方便。</p>
+<p># </p>
+<p>根据前面多篇文章所学，我们如果要写出第l层j个神经元的加权输入的微分应该不难，就是链式法则求导，如下：<br><img src="http://upload-images.jianshu.io/upload_images/1234352-eb16ebf1d52d63cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>这里我们假设l层是最后一层，那么此时求出了关于加权输入的微分，就可以继续微分求取关于权重的微分<br>根据<br><img src="http://upload-images.jianshu.io/upload_images/1234352-8f1c85d6dbaf92e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>所以，不难求出关于权重的微分<br><img src="http://upload-images.jianshu.io/upload_images/1234352-6b1ccd4fdd963ec2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>好，现在问题来了，如果我们再往前，求倒数第二层的某个权重，思路也是一致的，也就是要从最后一层一直往回算，为了避免公式太长，我们先求关于第l-1层第j个神经元的加权输入的微分<br><img src="http://upload-images.jianshu.io/upload_images/1234352-5502f1b8aa0821ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>然后再根据<br><img src="http://upload-images.jianshu.io/upload_images/1234352-8f1c85d6dbaf92e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>求取权重的微分！</p>
+<p>可以看到，只是倒数第二层而已，我们的求取的公式就已经很长了，如果再有个几层，估计就已经爆炸了！</p>
+<p>这个时候，就轮到动态规划出场了，动态规划就是在递归的过程中，保存已有的结果，下次计算的时候就不用再算了，可以直接从内存中红取结果。那么我们如何用在这里呢？</p>
+<p>仔细观察第l层和l-1层的权重计算公式，我们不难发现，计算第l-1层要经过l层，而在第l-1层中<br><img src="http://upload-images.jianshu.io/upload_images/1234352-95b0c09ab053268f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>我们发现前面两个微分<br><img src="http://upload-images.jianshu.io/upload_images/1234352-9ac9202e2ff208e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>不就是第l层的关于加权输入的微分么？也就是说，我们在第l层的权重的微分的计算的时候，就已经计算过这个了，然后在第l-1层的计算的时候还要用到这个。所以我们可以考虑，在第l层计算权重的微分的时候，就把这个值保存下来，这样在后续计算的时候就可以直接用了，这就是动态规划的思想！</p>
+<p>我们保存每一层的<br><img src="http://upload-images.jianshu.io/upload_images/1234352-1a7d70f5f4b54d93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>我们给这个值取了个名字叫敏感度矩阵，或者误差矩阵！</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-5355dd0512d09ead.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>然后我们根据误差矩阵来进行反向传播，首先不难求出误差矩阵的初始值，也就是最后一层的误差矩阵，前面我们已经计算过，直接替换就行<br><img src="http://upload-images.jianshu.io/upload_images/1234352-195c12e3fef1751f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>然后就是关键的动态规划的递推式，这个其实我们也已经在前面求解出来了，参照前面已经分析得出的<br><img src="http://upload-images.jianshu.io/upload_images/1234352-95b0c09ab053268f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>会发现，相邻两层间误差矩阵的关系就是激活函数的微分和权重，我们将其简化成向量的形式就是<br><img src="http://upload-images.jianshu.io/upload_images/1234352-3073f820640e0119.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>具体的证明如下，也就是链式法则的运用：<br>首先，<br><img src="http://upload-images.jianshu.io/upload_images/1234352-84fe66b46d4eabd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>然后，<br><img src="http://upload-images.jianshu.io/upload_images/1234352-f911a1e197e0ad6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>得到，<br><img src="http://upload-images.jianshu.io/upload_images/1234352-27e8db018a1fc097.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>代入，<br><img src="http://upload-images.jianshu.io/upload_images/1234352-3c92ca036b968c7c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>至此，一个完美的反向传播算法基本上已经大功告成了！<br>还差最后一丢丢，就是已经有了每一层的敏感度矩阵，也就是每一层关于加权输入的微分，最后再计算我们需要的每一层关于权重和偏置的微分，自然也是手到擒来，直接利用微分求导：<br>关于权重，<br><img src="http://upload-images.jianshu.io/upload_images/1234352-04c6708680eb4e3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>关于偏置，<br><img src="http://upload-images.jianshu.io/upload_images/1234352-38376267d402a404.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h1 id="后向传播算法"><a href="#后向传播算法" class="headerlink" title="后向传播算法"></a>后向传播算法</h1><p>后向传播等式给我们提供了一种计算代价函数梯度的方法。让我们用算法显示的写出它们：</p>
+<ol>
+<li>输入x：为输入层设置对应的激活a1。</li>
+<li>向前反馈：对于每一层l=1,2,3…,计算<img src="http://upload-images.jianshu.io/upload_images/1234352-701a80bc8946903c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>和<img src="http://upload-images.jianshu.io/upload_images/1234352-9055b70868884bf6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+<li>输出层误差δL：计算向量<img src="http://upload-images.jianshu.io/upload_images/1234352-005fa777f95d1de4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+<li>后向传播误差：对每一层l=L-1,L-2,…2计算<img src="http://upload-images.jianshu.io/upload_images/1234352-ed1890dd11590e94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+<li>输出：代价函数的梯度为<img src="http://upload-images.jianshu.io/upload_images/1234352-0613836247b0cd52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+</ol>
+<p>检查这个算法，你能看到为什么它被叫作后向传播。我们从最末一层开始向后计算各层误差δl。看起来将网络向后传播很奇怪。但是如果你再想一下后向传播的证明，向后移动就是因为代价是网络输出的函数。为了理解代价是如何跟随早期的权重和偏差进行的改变，我们需要不断的应用链式规则，向后来获取有用的表达式。</p>
+<h1 id="随机梯度下降的后向传播算法"><a href="#随机梯度下降的后向传播算法" class="headerlink" title="随机梯度下降的后向传播算法"></a>随机梯度下降的后向传播算法</h1><p>就像我上面描述那样，后向传播算法计算了某一个样本的代价函数的梯度C=Cx。实际上，通用的方式是将后向传播算法与随机梯度下降算法合并，我们便能计算许多训练样本的梯度。特别的，给出一小批训练样本mm，下面算法将基于小批训练样本进行梯度下降学习步骤：</p>
+<ol>
+<li>输入训练样本集合</li>
+<li><p>对于每一个训练样本x： 设置对应的输入激活，执行以下步骤（参照前文的后向传播算法）：</p>
+<ul>
+<li>向前反馈：对于每一层l=1,2,3…,计算<img src="http://upload-images.jianshu.io/upload_images/1234352-701a80bc8946903c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>和<img src="http://upload-images.jianshu.io/upload_images/1234352-9055b70868884bf6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+<li>输出层误差δL：计算向量<img src="http://upload-images.jianshu.io/upload_images/1234352-005fa777f95d1de4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+<li>后向传播误差：对每一层l=L-1,L-2,…2计算<img src="http://upload-images.jianshu.io/upload_images/1234352-ed1890dd11590e94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+</ul>
+</li>
+<li><p>梯度下降：按照更新法则更新权重和偏置<br><img src="http://upload-images.jianshu.io/upload_images/1234352-c45cb9dcc778a5a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-212d2d6887208b92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>当然，为了实施随机梯度下降，你也许要一个外部循环来产生小批量的训练样本，还需要一个外部循环来实施更多的训练代。我们将为了简化暂且忽略掉这些。</p>
+<h1 id="后向传播的实施代码"><a href="#后向传播的实施代码" class="headerlink" title="后向传播的实施代码"></a>后向传播的实施代码</h1><p>抽象上理解了后向传播算法，我们就能根据以上算法，实现一个完整的神经网络的后向传播的算法了！</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># %load network.py</span></span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">network.py</span></span><br><span class="line"><span class="string">~~~~~~~~~~</span></span><br><span class="line"><span class="string">IT WORKS</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">A module to implement the stochastic gradient descent learning</span></span><br><span class="line"><span class="string">algorithm for a feedforward neural network.  Gradients are calculated</span></span><br><span class="line"><span class="string">using backpropagation.  Note that I have focused on making the code</span></span><br><span class="line"><span class="string">simple, easily readable, and easily modifiable.  It is not optimized,</span></span><br><span class="line"><span class="string">and omits many desirable features.</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#### Libraries</span></span><br><span class="line"><span class="comment"># Standard library</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># Third-party libraries</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Network</span><span class="params">(object)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, sizes)</span>:</span></span><br><span class="line">        <span class="string">"""The list ``sizes`` contains the number of neurons in the</span></span><br><span class="line"><span class="string">        respective layers of the network.  For example, if the list</span></span><br><span class="line"><span class="string">        was [2, 3, 1] then it would be a three-layer network, with the</span></span><br><span class="line"><span class="string">        first layer containing 2 neurons, the second layer 3 neurons,</span></span><br><span class="line"><span class="string">        and the third layer 1 neuron.  The biases and weights for the</span></span><br><span class="line"><span class="string">        network are initialized randomly, using a Gaussian</span></span><br><span class="line"><span class="string">        distribution with mean 0, and variance 1.  Note that the first</span></span><br><span class="line"><span class="string">        layer is assumed to be an input layer, and by convention we</span></span><br><span class="line"><span class="string">        won't set any biases for those neurons, since biases are only</span></span><br><span class="line"><span class="string">        ever used in computing the outputs from later layers."""</span></span><br><span class="line">        self.num_layers = len(sizes)</span><br><span class="line">        self.sizes = sizes</span><br><span class="line">        self.biases = [np.random.randn(y, <span class="number">1</span>) <span class="keyword">for</span> y <span class="keyword">in</span> sizes[<span class="number">1</span>:]]</span><br><span class="line">        self.weights = [np.random.randn(y, x)</span><br><span class="line">                        <span class="keyword">for</span> x, y <span class="keyword">in</span> zip(sizes[:<span class="number">-1</span>], sizes[<span class="number">1</span>:])]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">feedforward</span><span class="params">(self, a)</span>:</span></span><br><span class="line">        <span class="string">"""Return the output of the network if ``a`` is input."""</span></span><br><span class="line">        <span class="keyword">for</span> b, w <span class="keyword">in</span> zip(self.biases, self.weights):</span><br><span class="line">            a = sigmoid(np.dot(w, a)+b)</span><br><span class="line">        <span class="keyword">return</span> a</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">SGD</span><span class="params">(self, training_data, epochs, mini_batch_size, eta,</span></span></span><br><span class="line"><span class="function"><span class="params">            test_data=None)</span>:</span></span><br><span class="line">        <span class="string">"""Train the neural network using mini-batch stochastic</span></span><br><span class="line"><span class="string">        gradient descent.  The ``training_data`` is a list of tuples</span></span><br><span class="line"><span class="string">        ``(x, y)`` representing the training inputs and the desired</span></span><br><span class="line"><span class="string">        outputs.  The other non-optional parameters are</span></span><br><span class="line"><span class="string">        self-explanatory.  If ``test_data`` is provided then the</span></span><br><span class="line"><span class="string">        network will be evaluated against the test data after each</span></span><br><span class="line"><span class="string">        epoch, and partial progress printed out.  This is useful for</span></span><br><span class="line"><span class="string">        tracking progress, but slows things down substantially."""</span></span><br><span class="line"></span><br><span class="line">        training_data = list(training_data)</span><br><span class="line">        n = len(training_data)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> test_data:</span><br><span class="line">            test_data = list(test_data)</span><br><span class="line">            n_test = len(test_data)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(epochs):</span><br><span class="line">            random.shuffle(training_data)</span><br><span class="line">            mini_batches = [</span><br><span class="line">                training_data[k:k+mini_batch_size]</span><br><span class="line">                <span class="keyword">for</span> k <span class="keyword">in</span> range(<span class="number">0</span>, n, mini_batch_size)]</span><br><span class="line">            <span class="keyword">for</span> mini_batch <span class="keyword">in</span> mini_batches:</span><br><span class="line">                self.update_mini_batch(mini_batch, eta)</span><br><span class="line">            <span class="keyword">if</span> test_data:</span><br><span class="line">                print(<span class="string">"Epoch &#123;&#125; : &#123;&#125; / &#123;&#125;"</span>.format(j,self.evaluate(test_data),n_test));</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                print(<span class="string">"Epoch &#123;&#125; complete"</span>.format(j))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update_mini_batch</span><span class="params">(self, mini_batch, eta)</span>:</span></span><br><span class="line">        <span class="string">"""Update the network's weights and biases by applying</span></span><br><span class="line"><span class="string">        gradient descent using backpropagation to a single mini batch.</span></span><br><span class="line"><span class="string">        The ``mini_batch`` is a list of tuples ``(x, y)``, and ``eta``</span></span><br><span class="line"><span class="string">        is the learning rate."""</span></span><br><span class="line">        nabla_b = [np.zeros(b.shape) <span class="keyword">for</span> b <span class="keyword">in</span> self.biases]</span><br><span class="line">        nabla_w = [np.zeros(w.shape) <span class="keyword">for</span> w <span class="keyword">in</span> self.weights]</span><br><span class="line">        <span class="keyword">for</span> x, y <span class="keyword">in</span> mini_batch:</span><br><span class="line">            delta_nabla_b, delta_nabla_w = self.backprop(x, y)</span><br><span class="line">            nabla_b = [nb+dnb <span class="keyword">for</span> nb, dnb <span class="keyword">in</span> zip(nabla_b, delta_nabla_b)]</span><br><span class="line">            nabla_w = [nw+dnw <span class="keyword">for</span> nw, dnw <span class="keyword">in</span> zip(nabla_w, delta_nabla_w)]</span><br><span class="line">        self.weights = [w-(eta/len(mini_batch))*nw</span><br><span class="line">                        <span class="keyword">for</span> w, nw <span class="keyword">in</span> zip(self.weights, nabla_w)]</span><br><span class="line">        self.biases = [b-(eta/len(mini_batch))*nb</span><br><span class="line">                       <span class="keyword">for</span> b, nb <span class="keyword">in</span> zip(self.biases, nabla_b)]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">backprop</span><span class="params">(self, x, y)</span>:</span></span><br><span class="line">        <span class="string">"""Return a tuple ``(nabla_b, nabla_w)`` representing the</span></span><br><span class="line"><span class="string">        gradient for the cost function C_x.  ``nabla_b`` and</span></span><br><span class="line"><span class="string">        ``nabla_w`` are layer-by-layer lists of numpy arrays, similar</span></span><br><span class="line"><span class="string">        to ``self.biases`` and ``self.weights``."""</span></span><br><span class="line">        nabla_b = [np.zeros(b.shape) <span class="keyword">for</span> b <span class="keyword">in</span> self.biases]</span><br><span class="line">        nabla_w = [np.zeros(w.shape) <span class="keyword">for</span> w <span class="keyword">in</span> self.weights]</span><br><span class="line">        <span class="comment"># feedforward</span></span><br><span class="line">        activation = x</span><br><span class="line">        activations = [x] <span class="comment"># list to store all the activations, layer by layer</span></span><br><span class="line">        zs = [] <span class="comment"># list to store all the z vectors, layer by layer</span></span><br><span class="line">        <span class="keyword">for</span> b, w <span class="keyword">in</span> zip(self.biases, self.weights):</span><br><span class="line">            z = np.dot(w, activation)+b</span><br><span class="line">            zs.append(z)</span><br><span class="line">            activation = sigmoid(z)</span><br><span class="line">            activations.append(activation)</span><br><span class="line">        <span class="comment"># backward pass</span></span><br><span class="line">        delta = self.cost_derivative(activations[<span class="number">-1</span>], y) * \</span><br><span class="line">            sigmoid_prime(zs[<span class="number">-1</span>])</span><br><span class="line">        nabla_b[<span class="number">-1</span>] = delta</span><br><span class="line">        nabla_w[<span class="number">-1</span>] = np.dot(delta, activations[<span class="number">-2</span>].transpose())</span><br><span class="line">        <span class="comment"># Note that the variable l in the loop below is used a little</span></span><br><span class="line">        <span class="comment"># differently to the notation in Chapter 2 of the book.  Here,</span></span><br><span class="line">        <span class="comment"># l = 1 means the last layer of neurons, l = 2 is the</span></span><br><span class="line">        <span class="comment"># second-last layer, and so on.  It's a renumbering of the</span></span><br><span class="line">        <span class="comment"># scheme in the book, used here to take advantage of the fact</span></span><br><span class="line">        <span class="comment"># that Python can use negative indices in lists.</span></span><br><span class="line">        <span class="keyword">for</span> l <span class="keyword">in</span> range(<span class="number">2</span>, self.num_layers):</span><br><span class="line">            z = zs[-l]</span><br><span class="line">            sp = sigmoid_prime(z)</span><br><span class="line">            delta = np.dot(self.weights[-l+<span class="number">1</span>].transpose(), delta) * sp</span><br><span class="line">            nabla_b[-l] = delta</span><br><span class="line">            nabla_w[-l] = np.dot(delta, activations[-l<span class="number">-1</span>].transpose())</span><br><span class="line">        <span class="keyword">return</span> (nabla_b, nabla_w)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">evaluate</span><span class="params">(self, test_data)</span>:</span></span><br><span class="line">        <span class="string">"""Return the number of test inputs for which the neural</span></span><br><span class="line"><span class="string">        network outputs the correct result. Note that the neural</span></span><br><span class="line"><span class="string">        network's output is assumed to be the index of whichever</span></span><br><span class="line"><span class="string">        neuron in the final layer has the highest activation."""</span></span><br><span class="line">        test_results = [(np.argmax(self.feedforward(x)), y)</span><br><span class="line">                        <span class="keyword">for</span> (x, y) <span class="keyword">in</span> test_data]</span><br><span class="line">        <span class="keyword">return</span> sum(int(x == y) <span class="keyword">for</span> (x, y) <span class="keyword">in</span> test_results)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">cost_derivative</span><span class="params">(self, output_activations, y)</span>:</span></span><br><span class="line">        <span class="string">"""Return the vector of partial derivatives \partial C_x /</span></span><br><span class="line"><span class="string">        \partial a for the output activations."""</span></span><br><span class="line">        <span class="keyword">return</span> (output_activations-y)</span><br><span class="line"></span><br><span class="line"><span class="comment">#### Miscellaneous functions</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(z)</span>:</span></span><br><span class="line">    <span class="string">"""The sigmoid function."""</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1.0</span>/(<span class="number">1.0</span>+np.exp(-z))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid_prime</span><span class="params">(z)</span>:</span></span><br><span class="line">    <span class="string">"""Derivative of the sigmoid function."""</span></span><br><span class="line">    <span class="keyword">return</span> sigmoid(z)*(<span class="number">1</span>-sigmoid(z))</span><br></pre></td></tr></table></figure>
+<p>以上代码实现了一个完整的神经网络的类，里面包括前向传播，结合小批量随机梯度法实现的后向传播，可以直接应用于神经网络问题的求解！</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>终于，我们从微分开始，讲到链式法则，从单个简单的神经元到嵌套神经元，再到两层的神经网络，最后到多层的神经网络，从微分结合链式法则的暴力进行反向传播的计算，到引入动态规划的计算，引入敏感度函数，真正理解了神经网络的反向传播算法！希望能对读者理解神经网络的反向传播有一定的帮助</p>
+<h1 id="Further-reading"><a href="#Further-reading" class="headerlink" title="Further reading"></a>Further reading</h1><ul>
+<li><a href="http://neuralnetworksanddeeplearning.com/chap2.html" target="_blank" rel="noopener">How the backpropagation algorithm works</a>. </li>
+<li><a href="http://numericinsight.com/uploads/A_Gentle_Introduction_to_Backpropagation.pdf" target="_blank" rel="noopener">A_Gentle_Introduction_to_Backpropagation</a>.</li>
+<li><a href="https://jasdeep06.github.io/" target="_blank" rel="noopener">jasdeep06</a></li>
+</ul>
+<blockquote>
+<p>本文相关代码可以从<a href="https://github.com/chi2liu/Backpropagation" target="_blank" rel="noopener">Backpropagation</a>下载</p>
+</blockquote>
+
       
 	  
 	  
@@ -460,6 +595,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/机器学习/" rel="tag"><i class="fa fa-tag"></i> 机器学习</a>
+          
+        </div>
       
 
       
@@ -491,6 +632,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/26/深入解析Backpropagation反向传播算法/" rel="prev" title="深入解析Backpropagation反向传播算法">
+                深入解析Backpropagation反向传播算法 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -551,8 +696,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -571,7 +725,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">50</span>
+                  <span class="site-state-item-count">51</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -669,6 +823,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lets-get-started"><span class="nav-number">1.</span> <span class="nav-text"><a href="#Lets-get-started" class="headerlink" title="Lets get started!!!"></a>Lets get started!!!</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hadamard乘积s⊙t"><span class="nav-number">2.</span> <span class="nav-text"><a href="#Hadamard&#x4E58;&#x79EF;s&#x2299;t" class="headerlink" title="Hadamard&#x4E58;&#x79EF;s&#x2299;t"></a>Hadamard&#x4E58;&#x79EF;s&#x2299;t</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后向传播算法"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;" class="headerlink" title="&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;"></a>&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#随机梯度下降的后向传播算法"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x968F;&#x673A;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x7684;&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;" class="headerlink" title="&#x968F;&#x673A;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x7684;&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;"></a>&#x968F;&#x673A;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x7684;&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后向传播的实施代码"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7684;&#x5B9E;&#x65BD;&#x4EE3;&#x7801;" class="headerlink" title="&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7684;&#x5B9E;&#x65BD;&#x4EE3;&#x7801;"></a>&#x540E;&#x5411;&#x4F20;&#x64AD;&#x7684;&#x5B9E;&#x65BD;&#x4EE3;&#x7801;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写在最后"><span class="nav-number">6.</span> <span class="nav-text"><a href="#&#x5199;&#x5728;&#x6700;&#x540E;" class="headerlink" title="&#x5199;&#x5728;&#x6700;&#x540E;"></a>&#x5199;&#x5728;&#x6700;&#x540E;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Further-reading"><span class="nav-number">7.</span> <span class="nav-text"><a href="#Further-reading" class="headerlink" title="Further reading"></a>Further reading</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -696,7 +866,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">91.5k</span>
+    <span title="Site words total count">102.6k</span>
   
 </div>
 
