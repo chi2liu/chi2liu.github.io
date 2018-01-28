@@ -3,6 +3,26 @@
 
 
     
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
+    <lastmod>2018-01-28T07:06:28.386Z</lastmod>
+    <data>
+        <display>
+        <title>Into-Backpropagation</title>
+        <pubTime>2018-01-26T06:42:23.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://liuchi.coding.me/2018/01/26/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Backpropagation%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95/</loc>
@@ -91,26 +111,6 @@
         <display>
         <title>Practice-Backpropagation</title>
         <pubTime>2018-01-26T06:43:37.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
-    <lastmod>2018-01-26T06:58:18.589Z</lastmod>
-    <data>
-        <display>
-        <title>Into-Backpropagation</title>
-        <pubTime>2018-01-26T06:42:23.000Z</pubTime>
         
         <tag>机器学习</tag>
          
