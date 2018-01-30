@@ -2,6 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://liuchi.coding.me/2016/07/20/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%EF%BC%88Strategy-Pattern%EF%BC%89/</loc>
+    
+    <lastmod>2018-01-30T09:21:04.895Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2017/12/16/%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87%E6%A0%A1%E6%8B%9B%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95-%E4%B8%80%E5%8F%AA%E5%B0%8F%E8%8F%9C%E9%B8%9F%E7%9A%84%E9%9D%A2%E8%AF%95%E4%B9%8B%E8%B7%AF/</loc>
+    
+    <lastmod>2018-01-30T09:20:46.020Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2016/07/20/session%E5%92%8Ccookies%E4%BC%9A%E8%AF%9D%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2018-01-30T09:16:56.558Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/17/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95%E5%8F%8A%E5%85%B6%E5%AE%9E%E7%8E%B0/</loc>
+    
+    <lastmod>2018-01-30T09:16:41.225Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Towards-Backpropagation/</loc>
+    
+    <lastmod>2018-01-30T09:16:16.242Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Practice-Backpropagation/</loc>
+    
+    <lastmod>2018-01-30T09:15:53.243Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Further-into-Backpropagation/</loc>
+    
+    <lastmod>2018-01-30T09:15:35.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Surpass-Backpropagation/</loc>
+    
+    <lastmod>2018-01-30T09:15:21.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/18/%E5%88%9D%E6%8E%A2-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    
+    <lastmod>2018-01-30T09:15:00.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Backpropagation%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95/</loc>
+    
+    <lastmod>2018-01-30T09:14:21.200Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
+    
+    <lastmod>2018-01-30T09:13:56.986Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://liuchi.coding.me/about/index.html</loc>
     
     <lastmod>2018-01-30T04:56:59.253Z</lastmod>
@@ -9,72 +86,9 @@
   </url>
   
   <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
-    
-    <lastmod>2018-01-28T07:06:28.386Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://liuchi.coding.me/favorite/index.html</loc>
     
     <lastmod>2018-01-27T12:39:51.422Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Backpropagation%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95/</loc>
-    
-    <lastmod>2018-01-26T07:08:46.994Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/18/%E5%88%9D%E6%8E%A2-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
-    
-    <lastmod>2018-01-26T07:08:23.206Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Surpass-Backpropagation/</loc>
-    
-    <lastmod>2018-01-26T07:04:25.836Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Further-into-Backpropagation/</loc>
-    
-    <lastmod>2018-01-26T07:01:48.526Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Practice-Backpropagation/</loc>
-    
-    <lastmod>2018-01-26T06:59:58.520Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Towards-Backpropagation/</loc>
-    
-    <lastmod>2018-01-26T06:56:15.689Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/17/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95%E5%8F%8A%E5%85%B6%E5%AE%9E%E7%8E%B0/</loc>
-    
-    <lastmod>2018-01-17T13:19:27.318Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2016/07/20/session%E5%92%8Ccookies%E4%BC%9A%E8%AF%9D%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2018-01-05T10:51:23.462Z</lastmod>
     
   </url>
   
@@ -289,13 +303,6 @@
   </url>
   
   <url>
-    <loc>https://liuchi.coding.me/2016/07/20/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%EF%BC%88Strategy-Pattern%EF%BC%89/</loc>
-    
-    <lastmod>2017-12-18T10:15:35.361Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://liuchi.coding.me/2017/08/05/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java-Runtime-Area-Java%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA/</loc>
     
     <lastmod>2017-12-18T10:06:47.429Z</lastmod>
@@ -320,13 +327,6 @@
     <loc>https://liuchi.coding.me/2017/12/16/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/</loc>
     
     <lastmod>2017-12-16T11:42:06.244Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2017/12/16/%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87%E6%A0%A1%E6%8B%9B%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95-%E4%B8%80%E5%8F%AA%E5%B0%8F%E8%8F%9C%E9%B8%9F%E7%9A%84%E9%9D%A2%E8%AF%95%E4%B9%8B%E8%B7%AF/</loc>
-    
-    <lastmod>2017-12-16T09:24:27.030Z</lastmod>
     
   </url>
   

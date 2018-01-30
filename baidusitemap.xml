@@ -3,42 +3,20 @@
 
 
     
-    
   <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
-    <lastmod>2018-01-28T07:06:28.386Z</lastmod>
+    <loc>https://liuchi.coding.me/2016/07/20/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%EF%BC%88Strategy-Pattern%EF%BC%89/</loc>
+    <lastmod>2018-01-30T09:21:04.895Z</lastmod>
     <data>
         <display>
-        <title>Into-Backpropagation</title>
-        <pubTime>2018-01-26T06:42:23.000Z</pubTime>
+        <title>设计模式之策略模式（Strategy Pattern）</title>
+        <pubTime>2016-07-20T12:34:47.000Z</pubTime>
         
-        <tag>机器学习</tag>
+        <tag>设计模式</tag>
          
          
            
              
-              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Backpropagation%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2018-01-26T07:08:46.994Z</lastmod>
-    <data>
-        <display>
-        <title>深入解析Backpropagation反向传播算法</title>
-        <pubTime>2018-01-26T06:52:47.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="设计模式" url="https://liuchi.coding.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
           
         </display>
     </data>
@@ -46,19 +24,19 @@
 
     
   <url>
-    <loc>https://liuchi.coding.me/2018/01/18/%E5%88%9D%E6%8E%A2-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2018-01-26T07:08:23.206Z</lastmod>
+    <loc>https://liuchi.coding.me/2017/12/16/%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87%E6%A0%A1%E6%8B%9B%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95-%E4%B8%80%E5%8F%AA%E5%B0%8F%E8%8F%9C%E9%B8%9F%E7%9A%84%E9%9D%A2%E8%AF%95%E4%B9%8B%E8%B7%AF/</loc>
+    <lastmod>2018-01-30T09:20:46.020Z</lastmod>
     <data>
         <display>
-        <title>初探--神经网络</title>
-        <pubTime>2018-01-18T12:17:39.000Z</pubTime>
+        <title>如何准备校招技术面试+一只小菜鸟的面试之路</title>
+        <pubTime>2017-12-16T09:14:51.000Z</pubTime>
         
-        <tag>机器学习</tag>
+        <tag>面试</tag>
          
          
            
              
-              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="面试" url="https://liuchi.coding.me/categories/%E9%9D%A2%E8%AF%95/"/>
           
         </display>
     </data>
@@ -66,79 +44,19 @@
 
     
   <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Surpass-Backpropagation/</loc>
-    <lastmod>2018-01-26T07:04:25.836Z</lastmod>
+    <loc>https://liuchi.coding.me/2016/07/20/session%E5%92%8Ccookies%E4%BC%9A%E8%AF%9D%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2018-01-30T09:16:56.558Z</lastmod>
     <data>
         <display>
-        <title>Surpass-Backpropagation</title>
-        <pubTime>2018-01-26T06:44:19.000Z</pubTime>
+        <title>session和cookies会话机制详解</title>
+        <pubTime>2016-07-20T12:08:44.000Z</pubTime>
         
-        <tag>机器学习</tag>
+        <tag>Web</tag>
          
          
            
              
-              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Further-into-Backpropagation/</loc>
-    <lastmod>2018-01-26T07:01:48.526Z</lastmod>
-    <data>
-        <display>
-        <title>Further-into-Backpropagation</title>
-        <pubTime>2018-01-26T06:44:00.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Practice-Backpropagation/</loc>
-    <lastmod>2018-01-26T06:59:58.520Z</lastmod>
-    <data>
-        <display>
-        <title>Practice-Backpropagation</title>
-        <pubTime>2018-01-26T06:43:37.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Towards-Backpropagation/</loc>
-    <lastmod>2018-01-26T06:56:15.689Z</lastmod>
-    <data>
-        <display>
-        <title>Towards-Backpropagation</title>
-        <pubTime>2018-01-26T06:41:52.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="Web" url="https://liuchi.coding.me/categories/Web/"/>
           
         </display>
     </data>
@@ -147,7 +65,7 @@
     
   <url>
     <loc>https://liuchi.coding.me/2018/01/17/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95%E5%8F%8A%E5%85%B6%E5%AE%9E%E7%8E%B0/</loc>
-    <lastmod>2018-01-17T13:19:27.318Z</lastmod>
+    <lastmod>2018-01-30T09:16:41.225Z</lastmod>
     <data>
         <display>
         <title>深入浅出--梯度下降法及其实现</title>
@@ -166,24 +84,146 @@
 
     
   <url>
-    <loc>https://liuchi.coding.me/2016/07/20/session%E5%92%8Ccookies%E4%BC%9A%E8%AF%9D%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2018-01-05T10:51:23.462Z</lastmod>
+    <loc>https://liuchi.coding.me/2018/01/26/Towards-Backpropagation/</loc>
+    <lastmod>2018-01-30T09:16:16.242Z</lastmod>
     <data>
         <display>
-        <title>session和cookies会话机制详解</title>
-        <pubTime>2016-07-20T12:08:44.000Z</pubTime>
+        <title>Towards-Backpropagation</title>
+        <pubTime>2018-01-26T06:41:52.000Z</pubTime>
         
-        <tag>Web</tag>
+        <tag>机器学习</tag>
          
          
            
              
-              <breadCrumb title="Web" url="https://liuchi.coding.me/categories/Web/"/>
+              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
     </url>
 
+    
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Practice-Backpropagation/</loc>
+    <lastmod>2018-01-30T09:15:53.243Z</lastmod>
+    <data>
+        <display>
+        <title>Practice-Backpropagation</title>
+        <pubTime>2018-01-26T06:43:37.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Further-into-Backpropagation/</loc>
+    <lastmod>2018-01-30T09:15:35.021Z</lastmod>
+    <data>
+        <display>
+        <title>Further-into-Backpropagation</title>
+        <pubTime>2018-01-26T06:44:00.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Surpass-Backpropagation/</loc>
+    <lastmod>2018-01-30T09:15:21.285Z</lastmod>
+    <data>
+        <display>
+        <title>Surpass-Backpropagation</title>
+        <pubTime>2018-01-26T06:44:19.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/18/%E5%88%9D%E6%8E%A2-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2018-01-30T09:15:00.338Z</lastmod>
+    <data>
+        <display>
+        <title>初探--神经网络</title>
+        <pubTime>2018-01-18T12:17:39.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Backpropagation%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2018-01-30T09:14:21.200Z</lastmod>
+    <data>
+        <display>
+        <title>深入解析Backpropagation反向传播算法</title>
+        <pubTime>2018-01-26T06:52:47.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
+    <lastmod>2018-01-30T09:13:56.986Z</lastmod>
+    <data>
+        <display>
+        <title>Into-Backpropagation</title>
+        <pubTime>2018-01-26T06:42:23.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://liuchi.coding.me/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
   <url>
     <loc>https://liuchi.coding.me/2016/07/16/%E6%B5%85%E8%B0%88servlet%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
@@ -764,26 +804,6 @@
 
     
   <url>
-    <loc>https://liuchi.coding.me/2016/07/20/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%EF%BC%88Strategy-Pattern%EF%BC%89/</loc>
-    <lastmod>2017-12-18T10:15:35.361Z</lastmod>
-    <data>
-        <display>
-        <title>设计模式之策略模式（Strategy Pattern）</title>
-        <pubTime>2016-07-20T12:34:47.000Z</pubTime>
-        
-        <tag>设计模式</tag>
-         
-         
-           
-             
-              <breadCrumb title="设计模式" url="https://liuchi.coding.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://liuchi.coding.me/2017/08/05/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java-Runtime-Area-Java%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA/</loc>
     <lastmod>2017-12-18T10:06:47.429Z</lastmod>
     <data>
@@ -852,26 +872,6 @@
         <display>
         <title>程序员面试资料</title>
         <pubTime>2017-12-16T11:40:47.000Z</pubTime>
-        
-        <tag>面试</tag>
-         
-         
-           
-             
-              <breadCrumb title="面试" url="https://liuchi.coding.me/categories/%E9%9D%A2%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://liuchi.coding.me/2017/12/16/%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87%E6%A0%A1%E6%8B%9B%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95-%E4%B8%80%E5%8F%AA%E5%B0%8F%E8%8F%9C%E9%B8%9F%E7%9A%84%E9%9D%A2%E8%AF%95%E4%B9%8B%E8%B7%AF/</loc>
-    <lastmod>2017-12-16T09:24:27.030Z</lastmod>
-    <data>
-        <display>
-        <title>如何准备校招技术面试+一只小菜鸟的面试之路</title>
-        <pubTime>2017-12-16T09:14:51.000Z</pubTime>
         
         <tag>面试</tag>
          
