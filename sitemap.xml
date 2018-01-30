@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://liuchi.coding.me/about/index.html</loc>
+    
+    <lastmod>2018-01-30T04:56:59.253Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
     
     <lastmod>2018-01-28T07:06:28.386Z</lastmod>
@@ -166,13 +173,6 @@
     <loc>https://liuchi.coding.me/tags/index.html</loc>
     
     <lastmod>2017-12-19T00:57:19.564Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/about/index.html</loc>
-    
-    <lastmod>2017-12-19T00:56:55.061Z</lastmod>
     
   </url>
   
