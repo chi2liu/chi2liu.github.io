@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
+    
+    <lastmod>2018-01-30T14:53:20.106Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://liuchi.coding.me/2018/01/26/Towards-Backpropagation/</loc>
     
-    <lastmod>2018-01-30T14:48:33.990Z</lastmod>
+    <lastmod>2018-01-30T14:51:39.105Z</lastmod>
     
   </url>
   
@@ -68,13 +75,6 @@
     <loc>https://liuchi.coding.me/2018/01/26/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Backpropagation%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95/</loc>
     
     <lastmod>2018-01-30T09:14:21.200Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchi.coding.me/2018/01/26/Into-Backpropagation/</loc>
-    
-    <lastmod>2018-01-30T09:13:56.986Z</lastmod>
     
   </url>
   
