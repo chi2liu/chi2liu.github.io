@@ -3,6 +3,14 @@
   
     
     <entry>
+      <title><![CDATA[hello]]></title>
+      <url>/2018/02/28/hello/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[深入解析Backpropagation反向传播算法]]></title>
       <url>/2018/01/26/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Backpropagation%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95/</url>
       <content type="html"><![CDATA[<p><strong>Backpropagation反向传播算法</strong>是神经网络理论中的最基本的算法，也是神经网络能够自主学习的根本原理，也就是神经网络的<strong>“智能”</strong>所在！<br><a id="more"></a><br>所以掌握<strong>Backpropagation反向传播算法</strong>是极其重要的！能帮助我们更好的理解神经网络的本质！然而相关资料却晦涩难懂，或者是没有讲到<strong>Backpropagation反向传播算法</strong>的本质！</p>
