@@ -3,6 +3,128 @@
   
     
     <entry>
+      <title><![CDATA[comsol快速入门教程]]></title>
+      <url>/2018/05/09/comsol%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<p>我曾经大三的专业课老师要求全班学习COMSOL！</p>
+<p>我自己参照官网的教程，写了个比较通俗易懂的入门教程，字多图多慎看（大三的时候写的）。</p>
+<p>教你一步一步做出第一个项目。（其实COMSOL本身不难，主要是其中涉及的物理建模和数理方程的知识是不可或缺的）</p>
+<p>扳手受力分析</p>
+<p>我们平常用的扳手：如下图：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-a21c048217a6475b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>我们可以通过对它进行模拟分析，熟悉一下comsol的基本操作流程；（这是个简单的力学模拟，不涉及耦合场的模拟，当然，comsol最强大的功能是耦合场模拟，这个我们不急，先看完这个了解一下，具体的耦合场的例子推荐大家去看官方的help文档example2，这个例子也是上面的，相比官方来说，我的首先是中文比较好懂一点，然后解释比较直白通俗）</p>
+<p>当然你也可能有些地方不懂，第一是有限元不太知道，第二就是数理方程边界条件不太知道，第三就是我没说明白！！！</p>
+<p>本人也是个新手，刚看过三国，就学关公耍大刀了，大家将就着看吧，肯定会有差错，敬请原谅敬请原谅。。。。。</p>
+<p>第一部分：</p>
+<p>选择基本的研究领域，显然，我们这里研究的是结构力学模块中的固体力学，然后它跟时间无关，所以是稳态的研究。模型当然是选择3D的了。具体步骤有截图：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-9166ac5555caf4b5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-5adf7d430b251b76.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-85e9500eb514b15a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-8d2ec4730bfb94cf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>完成这四步以后，我们就可以进入comsol 的主界面了！</p>
+<p>Ps：这里稍微介绍一下，为什么我们一开始要选择不同的模块和领域，什么力学，电磁学，光学什么的，在于不同模块所需要的偏微分方程和边界条件都是不一样的（请回忆数学物理方程里的三个基本方程和相关的定界问题），comsol为我们预设了不同的微分方程所以我们不需要自己设（当然你可以选择自己设），只要点击相应的模块就行了。这是comsol的一大优势。</p>
+<p>第二部分：</p>
+<p>下面我们就开始设置相关的条件了。</p>
+<p>首先我们要有一个模型，我们研究的是一个扳手，所以我们要有一个扳手的模型，可以自己绘制，这个扳手模型的绘制应该是比较复杂的，只用comsol基本功能可能比较难，可以用CAD软件区绘制，comsol支持CAD文件的导入。</p>
+<p>上面扯了一大堆，对于我们来说，第一次就用comsol里面自带的几何模型库吧，正好里面有。我们可以选择导入，具体步骤如下：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-e89b0d84e3c7d8a3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-815eeb100ad7ab13.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-76e041e9296fd7f3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>上面那个默认的目录是：C:\Program Files\COMSOL\COMSOL44\models\COMSOL_Multiphysics\</p>
+<p>Structural_Mechanics\wrench.mphbin</p>
+<p>大家根据自己的安装情况不同可以找到它。</p>
+<p>这时候，我们就把扳手的模型导入了，大家可以去随便点一点</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-93ca82b39bc3d618.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>这一排的按钮，看一看它们的作用是什么，可以随便点的，点不坏的，不用怕，我就不一一介绍了</p>
+<p>下面我们就进行下一步了</p>
+<p>模型选定了，接下来我们根据</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-23ddb8cfa0c08e72.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>它上面从上到下的顺序，选择材料属性</p>
+<p>我们知道不同的材料的杨氏模量，泊松比是不一样的，所以要确定材料（具体请脑补朝玉大师的弹性力学与张亮分析）</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-29f55f0c83631f81.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>大家可能会找不到它，它是在built-in里面的，需要先打开built-in再找。</p>
+<p>然后就设置好材料了，大家可以看一看它的具体的数据</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-45ef379a58fd0b98.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>下面我们就进行第三步了，模型有了，材料也搞好了，开始设置边界条件吧！（最关键的一步）</p>
+<p>微分方程之前我们选模块的时候就选好了，要解微分方程就看边界条件和初始条件了，这里跟时间无关（此处脑补操老师的数理方程）</p>
+<p>扳手的受力，显然我们按住扳手的尾端，也就是在扳手的尾端施加力，扳手的前端是固定的</p>
+<p>很明显，扳手的前端是固定端，添加固定边界条件</p>
+<p>尾端要加上载荷（这里有问题请参考数理方程）</p>
+<p>首先选择固定边界条件</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-6377716b390acf00.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>加在扳手的前端上，变成蓝色说明已经被选定，这一步只要在扳手前端找到如图所示，点击鼠标就行了</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-448e7cb89ae9e301.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>以上两步，说明我们给扳手前端加了固定边界条件。</p>
+<p>下面一步给扳手加上载荷：</p>
+<p>跟上一步一样，左键选择添加边界载荷：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-2c05bd9c2f45355d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>然后我们选定载荷作用的这一部分：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-7df5ffdf2bc76e73.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>选好之后，我们看左边的栏目，添加相应的载荷属性（也就是力的方向和大小）</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-2b13fd3894e8c653.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>先选择total force，在写上力就行了，我写的是150，大家可以随便大小，但不要太大（太大，扳手承受不了就。。。。）</p>
+<p>这里为什么有负号，因为压扳手的力是朝z轴负方向的。。。。。</p>
+<p>到此就全部设置好了！</p>
+<p>下面就进行网格化吧（这是有限元方法的基本步骤，不懂的请稍微看看有限元）</p>
+<p>当然，目前也不需要你懂什么，稍微点两下就行了</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-0f4a0dbe77fc089c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-827bc44c399d02da.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>再点</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-6964c66c1f038bfc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>就行了，。。网格化完毕</p>
+<p>这里我们用的是系统自动网格化，我们也可以选择人工的，人工的就要我们自己设置网格的大小，密度什么的。。。。</p>
+<p>网格化完了，你的扳手就会变成这样：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-4f03174641bdcfa5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>全部设置都结束了</p>
+<p>最后只要轻轻点一下计算就行了</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-86b39933387bc137.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>如果你的电脑运行内存小于4g，那很不幸，你可能算不出来，要进行一些额外的步骤（现在4g以下的笔记本应该不多了，如果你是，就来问我吧）</p>
+<p>如果你的内存小于4g的话，就请看下面：</p>
+<p>没关系，可以用硬盘内存代替运行内存，多几个简单的步骤：</p>
+<p>首先，你就不要点计算了，先进行以下步骤</p>
+<p>右击</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-fd7e24d140a5c999.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>,选择</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-b8c596aebd5122d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>，然后展开</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-843e950dd78d53bd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>，变成下面这个样子：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-c57f5ef3efc51ffa.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>展开</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-55baeeace2a23c75.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>，并点击</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-d9083afc1bce8ed3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>在右边的设置窗口设置：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-a3b8c9df67e32607.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>跟这个图上设置的一样吧</p>
+<p>这个设置确保如果你的电脑运行低内存中计算,解算器将开始使用硬盘作为补充RAM。允许解算器使用硬盘而不是内存计算慢下来。</p>
+<p>到此你就设置完了，可以像之前一样，右键</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1234352-d98b6b2dd0c239ac.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>，点击计算就行了。</p>
+<p>你的内存大于4g就不用管，等它算完吧，可能要一些时间，一两分钟。。。</p>
+<p>成功算完之后，你会看到：</p>
+<p>是不是很神奇，整个扳手每个地方的受力都显示出来了（如果你的力不是150的话，可能情况跟我不一样。。。。。）</p>
+<p>你看到的黑线的部分是扳手形变之前的位置，也就是初始位置。。。。</p>
+<p>接下来，你可以稍微设置一下，就可以看到扳手的形变情况或者是受压力的情况。。。。（如果你的力不是150的话，可能情况跟我不一样。。。。。）</p>
+<p>后面我就贴步骤，具体不啰嗦了，你基本也知道基本的流程了</p>
+<p>这个扳手的建模我实际上是省略的全局定义的那一部分，这一部分在大型的建模过程中是排在第一步的，也就是设定参数，设定变量，设定函数什么的，比如我们就可以事先设定一个参数F来代表载荷，在填载荷的时候就可以直接写F不用写具体数值。。。。。但是我们这个小模型很显然就没必要了。。。。大家先有一个意识</p>
+]]></content>
+      
+        <categories>
+            
+            <category> comsol </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> comsol </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[一个故事带你搞懂ASCII,Unicode字符集和UTF-8编码]]></title>
       <url>/2018/05/06/%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B%E5%B8%A6%E4%BD%A0%E6%90%9E%E6%87%82ASCII-Unicode%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8CUTF-8%E7%BC%96%E7%A0%81/</url>
       <content type="html"><![CDATA[<blockquote>
