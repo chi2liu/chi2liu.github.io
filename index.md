@@ -29,8 +29,6 @@ I study AI Infra, LLMs, reinforcement learning, and AI agents. Contributor to op
   Chi Liu <br>
     [paper](https://arxiv.org/abs/2512.19061)
 
-# Patents
-
 - **Container image processing method and apparatus, and non-transitory computer-readable storage medium** <br>
   US Patent US11880341B2 <br>
     [patent](https://patents.google.com/patent/US11880341B2/en)
