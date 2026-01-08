@@ -31,6 +31,20 @@ I love researching LLMs, reinforcement learning, and AI agents. Contributor to o
   Chi Liu <br>
     [paper](https://arxiv.org/abs/2512.19061)
 
+# Patents
+
+- **Container image processing method and apparatus, and non-transitory computer-readable storage medium** <br>
+  US Patent US11880341B2 <br>
+    [patent](https://patents.google.com/patent/US11880341B2/en)
+
+- **Method, device, equipment and medium for realizing joint modeling** <br>
+  CN Patent CN113326367A <br>
+    [patent](https://patents.google.com/patent/CN113326367A/en)
+
+- **Operating environment acquisition method, device and electronic device** <br>
+  CN Patent CN110908675A <br>
+    [patent](https://patents.google.com/patent/CN110908675A/en)
+
 # Public Talks
 
 - **QCon Shanghai 2024**: [从 MLOps 到 LLMOps，支持数千模型与数百亿推理请求的 AI for Data 平台探索](https://qcon.infoq.cn/2024/shanghai/presentation/6151)
