@@ -6,9 +6,7 @@ permalink: /index.html
 
 <img style="float:right; padding-left:10px" src="images/avatar.jpg" width="220" height="220">
 
-I am a Senior Software Engineer at PayPal AI Platform, focusing on large language models and AI infrastructure.
-
-I love researching LLMs, reinforcement learning, and AI agents. Contributor to open source projects including vLLM, SGLang, TRL, VERL, CrewAI, and FastMCP.
+I study AI Infra, LLMs, reinforcement learning, and AI agents. Contributor to open source projects including vLLM, SGLang, TRL, VERL, CrewAI, FastMCP, PaddlePaddle, etc.
 
 <!-- Add your bio and information here -->
 
