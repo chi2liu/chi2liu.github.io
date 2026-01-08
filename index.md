@@ -4,7 +4,7 @@ title: About
 permalink: /index.html
 ---
 
-<img style="float:right; padding-left:10px" src="images/chiliu.jpg" width="220" height="220">
+<img style="float:right; padding-left:10px" src="images/chiliu.jpg" width="300">
 
 I study AI Infra, LLMs, reinforcement learning, and AI agents. Contributor to open source projects including vLLM, SGLang, TRL, VERL, CrewAI, FastMCP, PaddlePaddle, etc.
 
