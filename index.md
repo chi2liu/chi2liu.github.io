@@ -22,7 +22,7 @@ permalink: /index.html
     [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/adaptive-boundary-clipping-grpo)
 
 - **Rethinking GSPO: The Perplexity-Entropy Equivalence** <br>
-  Chi Liu | 2025 <br>
+  Chi Liu | 2025 | 引用: [1](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=12325175761280254916) <br>
     [paper](https://arxiv.org/abs/2510.23142)
 
 - **Fraud Detection Through Large-Scale Graph Clustering with Heterogeneous Link Transformation** <br>
