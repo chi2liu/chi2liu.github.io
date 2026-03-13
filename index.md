@@ -18,16 +18,16 @@ permalink: /index.html
 # 学术论文
 
 - **Adaptive-Boundary-Clipping GRPO: Ensuring Bounded Ratios for Stable and Generalizable Training** <br>
-  Chi Liu, X Chen | 2026 | 引用: 2 <br>
-    [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/adaptive-boundary-clipping-grpo) | [查看引用](https://scholar.google.com/scholar?q=Adaptive-Boundary-Clipping+GRPO)
+  Chi Liu, X Chen | 2026 <br>
+    [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/adaptive-boundary-clipping-grpo)
 
 - **Rethinking GSPO: The Perplexity-Entropy Equivalence** <br>
-  Chi Liu | 2025 | 引用: 1 <br>
-    [paper](https://arxiv.org/abs/2510.23142) | [查看引用](https://scholar.google.com/scholar?q=Rethinking+GSPO)
+  Chi Liu | 2025 <br>
+    [paper](https://arxiv.org/abs/2510.23142)
 
 - **Fraud Detection Through Large-Scale Graph Clustering with Heterogeneous Link Transformation** <br>
   Chi Liu | 2025 | 引用: 1 <br>
-    [paper](https://arxiv.org/abs/2512.19061)
+    [paper](https://arxiv.org/abs/2512.19061) | [查看引用](https://scholar.google.com/scholar?q=Fraud+Detection+Large-Scale+Graph+Clustering)
 
 # 专利
 
