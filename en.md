@@ -27,7 +27,7 @@ B.S. and M.S. from Wuhan University. Tech Lead of Large Language Models at PayPa
 
 - **Fraud Detection Through Large-Scale Graph Clustering with Heterogeneous Link Transformation** <br>
   Chi Liu | 2025 | Citations: 1 <br>
-    [paper](https://arxiv.org/abs/2512.19061) | [view citations](https://scholar.google.com/scholar?q=Fraud+Detection+Large-Scale+Graph+Clustering)
+    [paper](https://arxiv.org/abs/2512.19061)
 
 # Patent
 
