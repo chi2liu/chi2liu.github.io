@@ -18,12 +18,12 @@ B.S. and M.S. from Wuhan University. Tech Lead of Large Language Models at PayPa
 # Selected work
 
 - **Adaptive-Boundary-Clipping GRPO: Ensuring Bounded Ratios for Stable and Generalizable Training** <br>
-  Chi Liu, X Chen | 2026 | Citations: 1 <br>
-    [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/adaptive-boundary-clipping-grpo) | [citations](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=8302157223939802618)
+  Chi Liu, X Chen | 2026 | Citations: 2 <br>
+    [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/adaptive-boundary-clipping-grpo) | [view citations](https://scholar.google.com/scholar?q=Adaptive-Boundary-Clipping+GRPO)
 
 - **Rethinking GSPO: The Perplexity-Entropy Equivalence** <br>
   Chi Liu | 2025 | Citations: 1 <br>
-    [paper](https://arxiv.org/abs/2510.23142) | [citations](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=12325175761280254916)
+    [paper](https://arxiv.org/abs/2510.23142) | [view citations](https://scholar.google.com/scholar?q=Rethinking+GSPO)
 
 - **Fraud Detection Through Large-Scale Graph Clustering with Heterogeneous Link Transformation** <br>
   Chi Liu | 2025 | Citations: 1 <br>
