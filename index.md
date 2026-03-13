@@ -10,26 +10,23 @@ permalink: /index.html
 
 <img style="float:right; padding-left:10px" src="images/self.jpeg" width="180" height="226">
 
-PayPal AI Platform 大模型方向负责人，支撑数千模型与数百亿推理请求的 AI 平台建设。长期专注于大语言模型、强化学习、图方法、后训练、智能体（Agent）以及大模型量化推理等方向的研究与实践。
+本硕毕业于武汉大学，现为 PayPal AI Platform 大模型方向 Tech Lead，支撑数千模型与数百亿推理请求的 AI 平台建设。长期专注于大语言模型、强化学习、Graph、Post-Training、智能体（Agent）以及大模型量化推理等方向的研究与实践。
 
-本科与硕士均毕业于武汉大学计算机专业。拥有 10 多项国家发明专利，发表多篇学术论文。曾就职于百度，专注于大数据用户画像、数据科学与 GPU 架构研发。
+拥有 10 多项国家发明专利，发表多篇学术论文。曾就职于百度，专注于高性能数据科学引擎、AI 机器学习平台等。
 
 
 # 学术论文
 
 - **Adaptive-Boundary-Clipping GRPO: Ensuring Bounded Ratios for Stable and Generalizable Training** <br>
-  Chi Liu, X Chen <br>
-  arXiv 2026 <br>
-    [paper](https://arxiv.org/abs/2601.03895)
+  Chi Liu, X Chen | 2026 | 引用: 1 <br>
+    [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/adaptive-boundary-clipping-grpo) | [引用](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=8302157223939802618)
 
 - **Rethinking GSPO: The Perplexity-Entropy Equivalence** <br>
-  Chi Liu <br>
-  arXiv 2025 <br>
-    [paper](https://arxiv.org/abs/2510.23142)
+  Chi Liu | 2025 | 引用: 1 <br>
+    [paper](https://arxiv.org/abs/2510.23142) | [引用](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=12325175761280254916)
 
 - **Fraud Detection Through Large-Scale Graph Clustering with Heterogeneous Link Transformation** <br>
-  Chi Liu <br>
-  arXiv 2025 <br>
+  Chi Liu | 2025 | 引用: 1 <br>
     [paper](https://arxiv.org/abs/2512.19061)
 
 # 专利

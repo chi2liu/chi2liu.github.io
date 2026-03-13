@@ -10,26 +10,23 @@ English | <a href="{{ site.baseurl }}/">中文</a>
 
 <img style="float:right; padding-left:10px" src="{{ site.baseurl }}/images/self.jpeg" width="180" height="226">
 
-I am the LLM lead at PayPal AI Platform, powering thousands of models and tens of billions of inference requests. Focusing on large language models, reinforcement learning, graph-based methods, post-training, agents, and LLM quantization & inference.
+B.S. and M.S. from Wuhan University. Tech Lead of Large Language Models at PayPal AI Platform, powering thousands of models and tens of billions of inference requests. Focusing on large language models, reinforcement learning, Graph, Post-Training, agents, and LLM quantization & inference.
 
-B.S. and M.S. in Computer Science, Wuhan University. I hold 10+ national invention patents and have published multiple academic papers. Previously, I worked at Baidu, where I focused on big data user profiling, data science and GPU architecture R&D.
+10+ national invention patents, multiple academic papers published. Previously worked at Baidu on high-performance data science engines and AI/ML platforms.
 
 
 # Selected work
 
 - **Adaptive-Boundary-Clipping GRPO: Ensuring Bounded Ratios for Stable and Generalizable Training** <br>
-  Chi Liu, X Chen <br>
-  arXiv 2026 <br>
-    [paper](https://arxiv.org/abs/2601.03895)
+  Chi Liu, X Chen | 2026 | Citations: 1 <br>
+    [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/adaptive-boundary-clipping-grpo) | [citations](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=8302157223939802618)
 
 - **Rethinking GSPO: The Perplexity-Entropy Equivalence** <br>
-  Chi Liu <br>
-  arXiv 2025 <br>
-    [paper](https://arxiv.org/abs/2510.23142)
+  Chi Liu | 2025 | Citations: 1 <br>
+    [paper](https://arxiv.org/abs/2510.23142) | [citations](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=12325175761280254916)
 
 - **Fraud Detection Through Large-Scale Graph Clustering with Heterogeneous Link Transformation** <br>
-  Chi Liu <br>
-  arXiv 2025 <br>
+  Chi Liu | 2025 | Citations: 1 <br>
     [paper](https://arxiv.org/abs/2512.19061)
 
 # Patent
