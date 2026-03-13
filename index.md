@@ -8,7 +8,7 @@ permalink: /index.html
 <a href="{{ site.baseurl }}/en">English</a> | 中文
 </div>
 
-<img style="float:right; padding-left:10px" src="images/self.jpeg" width="220" height="220">
+<img style="float:right; padding-left:10px" src="images/self.jpeg" width="180" height="226">
 
 PayPal AI Platform 大模型方向负责人，支撑数千模型与数百亿推理请求的 AI 平台建设。长期专注于大语言模型、强化学习、图方法、后训练、智能体（Agent）以及大模型量化推理等方向的研究与实践。
 

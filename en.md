@@ -8,7 +8,7 @@ permalink: /en/
 English | <a href="{{ site.baseurl }}/">中文</a>
 </div>
 
-<img style="float:right; padding-left:10px" src="{{ site.baseurl }}/images/self.jpeg" width="220" height="220">
+<img style="float:right; padding-left:10px" src="{{ site.baseurl }}/images/self.jpeg" width="180" height="226">
 
 I am the LLM lead at PayPal AI Platform, powering thousands of models and tens of billions of inference requests. Focusing on large language models, reinforcement learning, graph-based methods, post-training, agents, and LLM quantization & inference.
 
