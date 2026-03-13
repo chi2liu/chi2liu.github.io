@@ -26,7 +26,7 @@ permalink: /index.html
     [paper](https://arxiv.org/abs/2510.23142)
 
 - **Fraud Detection Through Large-Scale Graph Clustering with Heterogeneous Link Transformation** <br>
-  Chi Liu | 2025 | 引用: 1 <br>
+  Chi Liu | 2025 | 引用: [1](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=8302157223939802618) <br>
     [paper](https://arxiv.org/abs/2512.19061)
 
 # 专利
