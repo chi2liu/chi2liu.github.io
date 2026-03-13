@@ -19,7 +19,7 @@ permalink: /index.html
 
 - **Adaptive-Boundary-Clipping GRPO: Ensuring Bounded Ratios for Stable and Generalizable Training** <br>
   Chi Liu, X Chen | 2026 <br>
-    [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/adaptive-boundary-clipping-grpo)
+    [paper](https://arxiv.org/abs/2601.03895) | [github](https://github.com/chi2liu/ABC-GRPO)
 
 - **Rethinking GSPO: The Perplexity-Entropy Equivalence** <br>
   Chi Liu | 2025 | Cited by [1](https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=12325175761280254916) <br>
